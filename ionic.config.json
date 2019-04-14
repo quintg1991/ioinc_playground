@@ -1,5 +1,7 @@
 {
   "name": "ListInfo",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

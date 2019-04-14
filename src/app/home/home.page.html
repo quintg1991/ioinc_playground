@@ -1,14 +1,21 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Ionic Params
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    <ion-item>
+      <ion-input [(ngModel)]="value" clearinput></ion-input>
+    </ion-item>
+    <ion-button expand="full" [routerLink]="['/second', value]" routerDirection="forward">Push with Router link
+    </ion-button>
+    <ion-button expand="full" (click)="pushPage()">Push with Function</ion-button>
+    <ion-button expand="full" (click)="openModal()">Open Modal</ion-button>
+    <!-- <ion-button expand="full" (click)="openPopover($event)">Open Popover</ion-button> -->
+    <fa-icon [icon]="['fab', 'stack-overflow']" size="6x"></fa-icon>
   </div>
 </ion-content>

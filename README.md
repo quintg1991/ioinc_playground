@@ -1,0 +1,1 @@
+My playgroud for trying and breaking things in an ionic environment
